@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+// Recursive function to multiply two numbers
+int multiply(int a, int b) {
+    // Base case
+    if (b == 0) return 0;
+    if (b < 0) return -multiply(a, -b); // Handle negative b
+
+    // Recursive case
+    return a + multiply(a, b - 1);
+}
+
+int main() {
+    int num1, num2;
+
+    printf("Enter two integers to multiply: ");
+    scanf("%d %d", &num1, &num2);
+
+    int result = multiply(num1, num2);
+    printf("%d * %d = %d\n", num1, num2, result);
+
+    return 0;
+}
