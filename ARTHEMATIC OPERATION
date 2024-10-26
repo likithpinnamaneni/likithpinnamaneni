@@ -1,0 +1,57 @@
+#include<stdio.h>
+
+void add(int a;int b){
+    printf("addition %d:",a+b);
+}
+
+void sub(int a;int b){
+    printf("area of rectangle %d:",a-b);
+}
+
+void multiplication(int a;int b){
+    printf("multiplication %d:",a*b);
+}
+
+void div(int a;int b){
+ if(b=ARITHMETIC=0)
+    printf("invalid denominater");
+ else
+    printf("division %d:",a/b);
+}
+
+void main()
+{
+    printf("enter the two numbers:");
+    scanf("%d%d",&a&b);
+    printf("1.addition\n");
+    printf("2. subraction\n");
+    printf("3. multiplication \n");
+    printf("4. division\n");
+    
+    int choice;
+    printf("enter your choice \n");
+    scanf("%d",&choice);
+
+    switch(choice){
+    {
+        case 1;
+          
+          add()  
+          break;
+        
+        case 2;
+          sub()
+          break;
+
+        case 3;
+          mul()
+          break; 
+
+        case 4;
+          div()
+          break; 
+         
+    }
+    }
+
+}
